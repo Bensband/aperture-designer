@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,20,6">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="input_btn">
+        <property name="text">
+         <string>输入预览</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="aper_btn">
+        <property name="text">
+         <string>掩膜</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rec_btn">
+        <property name="text">
+         <string>重建衍射图样</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="more_btn">
+        <property name="text">
+         <string>更多结果</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="8">
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page"/>
+        <widget class="QWidget" name="page_2"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="log_edit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>820</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu13">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionload"/>
+    <addaction name="actionhist"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actioninitial"/>
+    <addaction name="actiontraining"/>
+   </widget>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionFresne_amplitude"/>
+    <addaction name="actionFresnel_phase"/>
+   </widget>
+   <widget class="QMenu" name="menuOthers">
+    <property name="title">
+     <string>Others</string>
+    </property>
+    <addaction name="actionForward_diffraction_stimulator"/>
+   </widget>
+   <addaction name="menu13"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuMode"/>
+   <addaction name="menuOthers"/>
+  </widget>
+  <action name="actionload">
+   <property name="text">
+    <string>load</string>
+   </property>
+  </action>
+  <action name="actioninitial">
+   <property name="text">
+    <string>initial settings</string>
+   </property>
+  </action>
+  <action name="actiontraining">
+   <property name="text">
+    <string>training settings</string>
+   </property>
+  </action>
+  <action name="actionhist">
+   <property name="text">
+    <string>history</string>
+   </property>
+  </action>
+  <action name="actionFresne_amplitude">
+   <property name="text">
+    <string>Fresnel_amplitude</string>
+   </property>
+  </action>
+  <action name="actionFresnel_phase">
+   <property name="text">
+    <string>Fresnel_phase</string>
+   </property>
+  </action>
+  <action name="actionFraunhofer_amplitude">
+   <property name="text">
+    <string>Fraunhofer_amplitude</string>
+   </property>
+  </action>
+  <action name="actionForward_diffraction_stimulator">
+   <property name="text">
+    <string>Forward diffraction stimulator</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

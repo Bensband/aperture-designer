@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/">
+    <file>pic/pic2.png</file>
+    <file>D:\python_works(conda)\pytorch\3_unet\pyside6\proj_4_stacked\test5.jpeg</file>
+    <file>D:\python_works(conda)\pytorch\3_unet\project1_diffraction\no_dataset\Ui\pic\aperture.png</file>
+    <file>D:\python_works(conda)\pytorch\3_unet\project1_diffraction\no_dataset\Ui\pic\light.png</file>
+    <file>D:\python_works(conda)\pytorch\3_unet\project1_diffraction\no_dataset\Ui\pic\result.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>pic/pic2.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>pic/pic.png</file>
+  </qresource>
+</RCC>
